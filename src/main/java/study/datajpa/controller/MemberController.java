@@ -39,7 +39,7 @@ public class MemberController {
     }
 
     //App 시작할때 아래의 값 들어감
-    @PostConstruct
+//    @PostConstruct
     public void init() {
         for (int i = 0; i < 100; i++) {
             memberRepository.save(new Member("user" + i, i));
